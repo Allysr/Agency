@@ -1,0 +1,39 @@
+@mixin reset 
+
+*
+    padding:0
+    margin:0
+    box-sizing: border-box
+    font-family: 'Lato'
+
+a
+    text-decoration: none
+
+li
+    list-style: none
+    
+
+@mixin tablet
+    @media  (max-width: 755px)
+        @content
+    
+
+@mixin tablet-menor
+    @media (max-width: 663px)
+        @content
+
+@mixin mobile 
+    @media (max-width: 629px)
+        @content
+
+@mixin mobile-menor 
+    @media (max-width: 425px)
+        @content
+
+@mixin mobile-imagem
+    @media (max-width: 375px)
+        @content
+
+@mixin mobile-imagem-menor
+    @media (max-width: 320px)
+        @content
